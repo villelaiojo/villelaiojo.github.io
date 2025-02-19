@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
 
-
+/*******************************************************************************************/
 
 body{
     font-family: "Quattrocento", serif;
@@ -8,7 +8,8 @@ body{
 }
 .container {
     width: 95%;
-    max-width: 1200px;
+    max-width: 1100px;
+    max-height: 90000px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -28,7 +29,7 @@ body{
     z-index: -1;
 }
 
-
+/*******************************************************************************************/
 .nav{
     --padding-container: 0;
     height: 100%;
@@ -78,7 +79,7 @@ body{
 {
     display: var(--show, none);
 }
-
+/*******************************************************************************************/
 .hero_container
 {
    max-width: 800px;
@@ -90,6 +91,8 @@ body{
    padding-bottom: 100px;
    text-align: center;
 }
+
+/*******************************************************************************************/
 .price
 {
     text-align: center;
@@ -97,7 +100,7 @@ body{
 }
 .price_table
 {
-    padding-top: 60px;
+    padding-top: 55px;
     display: flex;
     flex-wrap: wrap;
     gap: 2.5em;
@@ -109,9 +112,9 @@ body{
 .price_element{
     background-color: #bbbea5;
     text-align: center;
-    border-radius: 10px;
-    width: 330px;
-    padding: 40px;
+    border-radius: 50px;
+    width: 340px;
+    padding: 30px;
     --color-plan: #71a63c;
     --color-price: #1D293F;
     --bg-cta: #fff;
@@ -133,7 +136,7 @@ body{
 }
 
 .price_items{
-    margin-top: 35px;
+    margin-top: 5px;
     display: grid;
     gap: 1em;
     font-weight: 300;
@@ -144,14 +147,19 @@ body{
 
 .price_cta{
     display: block;
-    padding: 20px 0;
+    padding: 20px 10;
     border-radius: 10px;
     text-decoration: none;
     background-color: var(--bg-cta);
     font-weight: 600;
     color: var(--color-cta);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    
 }
+
+/*******************************************************************************************/
+
+
 .subtitleA
 {
     color: #fff;
@@ -161,29 +169,37 @@ body{
     color: #fff;
     text-decoration: none;
 }
-
+/*******************************************************************************************/
 
 /*footer*/
 
 .footer{
     background-color: #1D293F;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a2940; /* Color de fondo */
+    padding: 10px 0;
+    text-align: center;
 }
 
 .footer__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
+    border-bottom: 1px solid #fff;
+    padding-bottom: 60px;
 }
 
 .footer__copy{
-    --padding-container: 20px 10;
+    --padding-container: 5px 0;
     text-align: center;
     color: #fff;
 }
 
 .footer__copyright{
-    font-weight: 30;
+    font-weight: 300;
 }
 
 .footer__icons{
@@ -195,6 +211,7 @@ body{
 }
 
 
+/*******************************************************************************************/
 
 /* Media queries */
 
@@ -320,5 +337,20 @@ body{
         margin:0;
         width: 100%;
         */
+    }
+}
+@media (max-width: 768px) { /* Para tablets y móviles */
+    .price__element {
+        max-width: 80%; /* Reduce el ancho */
+        padding: 1.5em; /* Reduce el padding */
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) { /* Para teléfonos más pequeños */
+    .price__element {
+        max-width: 90%;
+        padding: 1em;
+        font-size: 0.85rem;
     }
 }
