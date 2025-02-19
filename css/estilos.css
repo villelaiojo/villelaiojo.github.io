@@ -235,7 +235,7 @@ body{
 }
 
 .price_element{
-    background-color: #e5e5f7;
+    background-color: #bbbea5;
     text-align: center;
     border-radius: 10px;
     width: 330px;
@@ -249,7 +249,7 @@ body{
 }
 
 .price_element--best{
-    background-color: #e5e5f7;
+    background-color: #bbbea5;
     text-align: center;
     border-radius: 10px;
     width: 330px;

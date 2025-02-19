@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap');
 
-:root {
-    --padding-container: 100px 0;
-    --color-title: #001A49;
-}
+
 
 body{
     font-family: "Quattrocento", serif;
@@ -25,7 +22,8 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Images/portada.jpg');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../Images/portada2.jpg');
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     background-size: cover;
     z-index: -1;
 }
@@ -109,15 +107,15 @@ body{
 }
 
 .price_element{
-    background-color: #e5e5f7;
+    background-color: #bbbea5;
     text-align: center;
     border-radius: 10px;
     width: 330px;
     padding: 40px;
-    --color-plan: #696871;
+    --color-plan: #71a63c;
     --color-price: #1D293F;
     --bg-cta: #fff;
-    --color-cta: #5454D4;
+    --color-cta: #373757;
     --color-items: #696871;
 
 }
@@ -125,9 +123,8 @@ body{
 
 
 .price_name{
-    color: var(--color-plan);
-    margin-bottom: 15px;
-    font-weight: 300;
+    font-size: 2.5rem;
+    color: var(--color-price);
 }
 
 .price_Price{
@@ -164,6 +161,39 @@ body{
     color: #fff;
     text-decoration: none;
 }
+
+
+/*footer*/
+
+.footer{
+    background-color: #1D293F;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.footer__copy{
+    --padding-container: 20px 10;
+    text-align: center;
+    color: #fff;
+}
+
+.footer__copyright{
+    font-weight: 30;
+}
+
+.footer__icons{
+    margin-bottom: 10px;
+}
+
+.footer__img{
+    width: 50px;
+}
+
 
 
 /* Media queries */
